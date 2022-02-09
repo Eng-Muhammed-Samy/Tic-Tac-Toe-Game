@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="316.0" style="-fx-background-color: rgb(171,210,215);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="310.0" fitWidth="316.0" layoutX="10.0" layoutY="63.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/tic_tac_background.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="308.0" prefHeight="400.0" prefWidth="276.0" style="-fx-background-color: rgb(254,150,150);" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField layoutX="24.0" layoutY="128.0" prefHeight="26.0" prefWidth="215.0" promptText="user name or email" style="-fx-border-radius: 50px;" styleClass="buttons" stylesheets="@../../../css/styles.css" />
+            <PasswordField focusTraversable="false" layoutX="24.0" layoutY="193.0" prefHeight="26.0" prefWidth="215.0" promptText="password" style="-fx-border-radius: 100px;" styleClass="buttons" stylesheets="@../../../css/styles.css">
+               <effect>
+                  <Glow level="0.34" />
+               </effect>
+            </PasswordField>
+            <Label layoutX="26.0" layoutY="104.0" text="user name" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="168.0" styleClass="textLabels" text="password" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField focusTraversable="false" layoutX="24.0" layoutY="261.0" prefHeight="26.0" prefWidth="215.0" promptText="confirm password" style="-fx-border-radius: 100px;" styleClass="buttons" stylesheets="@../../../css/styles.css">
+               <effect>
+                  <Glow level="0.34" />
+               </effect>
+            </PasswordField>
+            <Label layoutX="24.0" layoutY="236.0" styleClass="textLabels" text="confirm password" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button id="loginButton" layoutX="70.0" layoutY="312.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="SIGN UP" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+               </font>
+            </Button>
+            <Label id="textLabel" layoutX="21.0" layoutY="18.0" prefHeight="76.0" prefWidth="244.0" stylesheets="@../../../css/styles.css" text="Tic Tac Toe" textFill="#fff47b">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="48.0" />
+               </font>
+            </Label>
+            <Label id="signUpLabel" layoutX="112.0" layoutY="350.0" prefHeight="20.0" prefWidth="39.0" stylesheets="@../../../css/styles.css" text="login" textFill="#373e48" underline="true">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
