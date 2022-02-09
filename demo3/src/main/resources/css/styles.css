@@ -1,0 +1,28 @@
+#parent
+{
+-fx-background-color: rgb(171,210,215);
+}
+.buttons{
+
+    -fx-background-radius: 30px;
+
+    -fx-border-radius: 30px;
+    -fx-border-width: 3px;
+
+
+}
+#loginButton
+{
+    -fx-background-color:rgb(254,225,83);
+}
+#gameButtons
+{
+ -fx-background-color:rgb(254,150,150);
+}
+#textLabel
+{
+   -fx-fill: red;
+   -fx-stroke: firebrick;
+   -fx-stroke-width: 2px;
+
+}
