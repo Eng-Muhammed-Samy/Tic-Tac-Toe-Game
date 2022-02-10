@@ -39,53 +39,53 @@
             <Font name="Berlin Sans FB Demi Bold" size="50.0" />
          </font>
       </Label>
-      <Label id="textLabel" layoutX="165.0" layoutY="55.0" prefHeight="54.0" prefWidth="296.0" stylesheets="@../../../css/styles.css" text="rehab vs sondos" textFill="#fff47b">
+      <Label fx:id="textLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="165.0" layoutY="55.0" prefHeight="54.0" prefWidth="263.0" stylesheets="@../../../css/styles.css" text="rehab vs sondos" textFill="#fff47b">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="37.0" />
          </font>
       </Label>
-      <Button layoutX="227.0" layoutY="108.0" mnemonicParsing="false" onAction="#labelClick" prefHeight="90.0" prefWidth="144.0" style="-fx-background-color: #97d2d7;" text="X">
+      <Button fx:id="button0" layoutX="91.0" layoutY="115.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="122.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
+         <font>
+            <Font name="Calisto MT Italic" size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="button1" layoutX="227.0" layoutY="108.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="144.0" style="-fx-background-color: #97d2d7;">
          <font>
             <Font name="Brush Script MT Italic" size="43.0" />
          </font></Button>
-      <Button layoutX="241.0" layoutY="202.0" mnemonicParsing="false" onAction="#labelClick" prefHeight="62.0" prefWidth="115.0" style="-fx-background-color: #97d2d7;" text="X">
+      <Button fx:id="button2" layoutX="382.0" layoutY="109.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="115.0" style="-fx-background-color: #97d2d7;">
          <font>
             <Font name="Brush Script MT Italic" size="43.0" />
          </font>
       </Button>
-      <Button layoutX="227.0" layoutY="302.0" mnemonicParsing="false" onAction="#labelClick" prefHeight="90.0" prefWidth="144.0" style="-fx-background-color: #97d2d7;" text="X">
+      <Button fx:id="button3" layoutX="83.0" layoutY="205.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="138.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
+         <font>
+            <Font name="Calisto MT Italic" size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="button4" layoutX="241.0" layoutY="202.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="115.0" style="-fx-background-color: #97d2d7;">
          <font>
             <Font name="Brush Script MT Italic" size="43.0" />
          </font>
       </Button>
-      <Button layoutX="91.0" layoutY="115.0" mnemonicParsing="false" onAction="#labelClick" prefHeight="75.0" prefWidth="122.0" style="-fx-background-color: #97d2d7;" text="O" textFill="#fe9696">
+      <Button fx:id="button5" layoutX="382.0" layoutY="208.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="115.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
          <font>
             <Font name="Calisto MT Italic" size="40.0" />
          </font>
       </Button>
-      <Button layoutX="83.0" layoutY="205.0" mnemonicParsing="false" onAction="#labelClick" prefHeight="81.0" prefWidth="138.0" style="-fx-background-color: #97d2d7;" text="O" textFill="#fe9696">
+      <Button fx:id="button6" layoutX="91.0" layoutY="309.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="122.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
          <font>
             <Font name="Calisto MT Italic" size="40.0" />
          </font>
       </Button>
-      <Button layoutX="382.0" layoutY="109.0" mnemonicParsing="false" onAction="#labelClick" prefHeight="75.0" prefWidth="115.0" style="-fx-background-color: #97d2d7;" text="X">
+      <Button fx:id="button7" layoutX="227.0" layoutY="302.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="144.0" style="-fx-background-color: #97d2d7;">
          <font>
             <Font name="Brush Script MT Italic" size="43.0" />
          </font>
       </Button>
-      <Button layoutX="382.0" layoutY="208.0" mnemonicParsing="false" onAction="#labelClick" prefHeight="75.0" prefWidth="115.0" style="-fx-background-color: #97d2d7;" text="O" textFill="#fe9696">
-         <font>
-            <Font name="Calisto MT Italic" size="40.0" />
-         </font>
-      </Button>
-      <Button layoutX="378.0" layoutY="303.0" mnemonicParsing="false" onAction="#labelClick" prefHeight="82.0" prefWidth="122.0" style="-fx-background-color: #97d2d7;" text="X">
+      <Button fx:id="button8" layoutX="378.0" layoutY="303.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="122.0" style="-fx-background-color: #97d2d7;">
          <font>
             <Font name="Brush Script MT Italic" size="43.0" />
-         </font>
-      </Button>
-      <Button layoutX="91.0" layoutY="309.0" mnemonicParsing="false" onAction="#labelClick" prefHeight="75.0" prefWidth="122.0" style="-fx-background-color: #97d2d7;" text="O" textFill="#fe9696">
-         <font>
-            <Font name="Calisto MT Italic" size="40.0" />
          </font>
       </Button>
       <Button id="gameButtons" layoutX="439.0" layoutY="15.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="SAVE" textFill="WHITE">
