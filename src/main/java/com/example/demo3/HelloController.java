@@ -44,11 +44,14 @@ public class HelloController implements Initializable {
     @FXML
     private Button button8;
 
+    @FXML
+    private Button Next_Round;
+
     private int playerTurn = 0;
     private int xWins=0;
     private int oWins=0;
     private String score;
-    int secondsToWait = 5;
+
 
     ArrayList<Button> buttons;
 
@@ -116,18 +119,21 @@ public class HelloController implements Initializable {
         if (winner==null) {
             textLabel.setText("Draw");
             waitAndPrint();
+            Next_Round.setDisable(false);
         }
         //X winner
         else if (winner.equals("X")) {
             textLabel.setText(winner+" won!");
             xWins++;
             waitAndPrint();
+            Next_Round.setDisable(false);
         }
         //O winner
         else if (winner.equals("O")) {
             textLabel.setText(winner+" won!");
             oWins++;
             waitAndPrint();
+            Next_Round.setDisable(false);
         }
     }
 
@@ -156,7 +162,11 @@ public class HelloController implements Initializable {
         new Thread(sleeper).start();
     }
 
-    public void resetGame(Button button){//Function to reset the game board could be used for "next round"
+    public void resetGame(){
+        buttons.forEach(this::resetButtons);
+    }
+
+    public void resetButtons(Button button){//Function to reset the game board could be used for "next round"
         button.setDisable(false);
         button.setText("");
     }
@@ -178,5 +188,6 @@ public class HelloController implements Initializable {
             setupButton(button);
             button.setFocusTraversable(false);
         });
+        Next_Round.setDisable(true);
     }
 }
