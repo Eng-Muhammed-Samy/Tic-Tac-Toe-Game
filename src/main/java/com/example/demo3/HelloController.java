@@ -164,6 +164,7 @@ public class HelloController implements Initializable {
 
     public void resetGame(){
         buttons.forEach(this::resetButtons);
+        Next_Round.setDisable(true);
     }
 
     public void resetButtons(Button button){//Function to reset the game board could be used for "next round"
