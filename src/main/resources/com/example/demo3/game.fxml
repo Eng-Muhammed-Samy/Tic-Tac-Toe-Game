@@ -7,147 +7,106 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<<<<<<< Updated upstream
 <AnchorPane prefHeight="470.0" prefWidth="600.0" style="-fx-background-color: rgb(151,210,215);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.HelloController">
-=======
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgb(151,210,215);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.gameController">
->>>>>>> Stashed changes
-   <children>
-      <Line endX="121.60003662109375" endY="13.343109130859375" layoutX="102.0" layoutY="116.0" startX="121.60003662109375" startY="251.97152709960938" stroke="WHITE" strokeLineJoin="ROUND" strokeWidth="4.0">
-         <effect>
-            <BoxBlur height="49.0" width="3.88" />
-         </effect>
-      </Line>
-      <Line endX="121.60003662109375" endY="-3.056915283203125" layoutX="250.0" layoutY="134.0" startX="121.60003662109375" startY="238.25689697265625" stroke="WHITE" strokeLineJoin="ROUND" strokeWidth="4.0">
-         <effect>
-            <BoxBlur height="49.0" width="3.88" />
-         </effect>
-      </Line>
-      <Line endX="99.4000244140625" endY="-1.52587890625E-5" layoutX="353.0" layoutY="201.0" startX="-220.5999755859375" startY="-1.52587890625E-5" stroke="WHITE" strokeWidth="4.0">
-         <effect>
-            <BoxBlur height="0.0" width="112.61" />
-         </effect>
-      </Line>
-      <Line endX="104.20001220703125" endY="-1.52587890625E-5" layoutX="353.0" layoutY="293.0" startX="-227.0" startY="-1.52587890625E-5" stroke="WHITE" strokeWidth="4.0">
-         <effect>
-            <BoxBlur height="0.0" width="112.61" />
-         </effect>
-      </Line>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="51.0" prefHeight="64.0" prefWidth="76.0" text="X" textAlignment="CENTER">
-         <font>
-            <Font name="Berlin Sans FB Demi Bold" size="50.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="422.0" layoutY="54.0" prefHeight="54.0" prefWidth="62.0" text="O" textAlignment="CENTER" textFill="#fe9696">
-         <font>
-            <Font name="Berlin Sans FB Demi Bold" size="50.0" />
-         </font>
-      </Label>
-      <Label fx:id="textLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="165.0" layoutY="55.0" prefHeight="54.0" prefWidth="263.0" stylesheets="@../../../css/styles.css" text="rehab vs sondos" textFill="#fff47b">
-         <font>
-            <Font name="Berlin Sans FB Demi Bold" size="37.0" />
-         </font>
-      </Label>
-<<<<<<< Updated upstream
-      <Button fx:id="button0" layoutX="91.0" layoutY="115.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="122.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
-         <font>
-            <Font name="Calisto MT Italic" size="40.0" />
-         </font>
-      </Button>
-      <Button fx:id="button1" layoutX="227.0" layoutY="108.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="144.0" style="-fx-background-color: #97d2d7;">
-         <font>
-            <Font name="Brush Script MT Italic" size="43.0" />
-         </font></Button>
-      <Button fx:id="button2" layoutX="382.0" layoutY="109.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="115.0" style="-fx-background-color: #97d2d7;">
-=======
-      <Button layoutX="227.0" layoutY="108.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="144.0" style="-fx-background-color: #97d2d7;" text="X">
-         <font>
-            <Font name="Brush Script MT Italic" size="43.0" />
-         </font></Button>
-      <Button layoutX="241.0" layoutY="202.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="115.0" style="-fx-background-color: #97d2d7;" text="X">
-         <font>
-            <Font name="Brush Script MT Italic" size="43.0" />
-         </font>
-      </Button>
-      <Button layoutX="227.0" layoutY="302.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="144.0" style="-fx-background-color: #97d2d7;" text="X">
->>>>>>> Stashed changes
-         <font>
-            <Font name="Brush Script MT Italic" size="43.0" />
-         </font>
-      </Button>
-<<<<<<< Updated upstream
-      <Button fx:id="button3" layoutX="83.0" layoutY="205.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="138.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
-=======
-      <Button layoutX="91.0" layoutY="115.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="122.0" style="-fx-background-color: #97d2d7;" text="O" textFill="#fe9696">
->>>>>>> Stashed changes
-         <font>
-            <Font name="Calisto MT Italic" size="40.0" />
-         </font>
-      </Button>
-<<<<<<< Updated upstream
-      <Button fx:id="button4" layoutX="241.0" layoutY="202.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="115.0" style="-fx-background-color: #97d2d7;">
-=======
-      <Button layoutX="83.0" layoutY="205.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="138.0" style="-fx-background-color: #97d2d7;" text="O" textFill="#fe9696">
->>>>>>> Stashed changes
-         <font>
-            <Font name="Brush Script MT Italic" size="43.0" />
-         </font>
-      </Button>
-<<<<<<< Updated upstream
-      <Button fx:id="button5" layoutX="382.0" layoutY="208.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="115.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
-=======
-      <Button layoutX="382.0" layoutY="109.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="115.0" style="-fx-background-color: #97d2d7;" text="X">
->>>>>>> Stashed changes
-         <font>
-            <Font name="Calisto MT Italic" size="40.0" />
-         </font>
-      </Button>
-<<<<<<< Updated upstream
-      <Button fx:id="button6" layoutX="91.0" layoutY="309.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="122.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
-=======
-      <Button layoutX="382.0" layoutY="208.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="115.0" style="-fx-background-color: #97d2d7;" text="O" textFill="#fe9696">
->>>>>>> Stashed changes
-         <font>
-            <Font name="Calisto MT Italic" size="40.0" />
-         </font>
-      </Button>
-<<<<<<< Updated upstream
-      <Button fx:id="button7" layoutX="227.0" layoutY="302.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="144.0" style="-fx-background-color: #97d2d7;">
-=======
-      <Button layoutX="378.0" layoutY="303.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="122.0" style="-fx-background-color: #97d2d7;" text="X">
->>>>>>> Stashed changes
-         <font>
-            <Font name="Brush Script MT Italic" size="43.0" />
-         </font>
-      </Button>
-<<<<<<< Updated upstream
-      <Button fx:id="button8" layoutX="378.0" layoutY="303.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="122.0" style="-fx-background-color: #97d2d7;">
-=======
-      <Button layoutX="91.0" layoutY="309.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="122.0" style="-fx-background-color: #97d2d7;" text="O" textFill="#fe9696">
->>>>>>> Stashed changes
-         <font>
-            <Font name="Brush Script MT Italic" size="43.0" />
-         </font>
-      </Button>
-      <Button id="gameButtons" layoutX="439.0" layoutY="15.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="SAVE" textFill="WHITE">
-         <font>
-            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
-         </font>
-      </Button>
-      <Button id="gameButtons" layoutX="27.0" layoutY="15.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="PAUSE" textFill="WHITE">
-         <font>
-            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
-         </font>
-      </Button>
-      <Button id="gameButtons" layoutX="238.0" layoutY="15.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="PLAY" textFill="WHITE">
-         <font>
-            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
-         </font>
-      </Button>
-      <Button fx:id="Next_Round" id="gameButtons" onAction="#resetGame" layoutX="239.0" layoutY="417.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="Next Round" textFill="WHITE">
-         <font>
-            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
-         </font>
-      </Button>
-   </children>
+    <children>
+        <Line endX="121.60003662109375" endY="13.343109130859375" layoutX="102.0" layoutY="116.0" startX="121.60003662109375" startY="251.97152709960938" stroke="WHITE" strokeLineJoin="ROUND" strokeWidth="4.0">
+            <effect>
+                <BoxBlur height="49.0" width="3.88" />
+            </effect>
+        </Line>
+        <Line endX="121.60003662109375" endY="-3.056915283203125" layoutX="250.0" layoutY="134.0" startX="121.60003662109375" startY="238.25689697265625" stroke="WHITE" strokeLineJoin="ROUND" strokeWidth="4.0">
+            <effect>
+                <BoxBlur height="49.0" width="3.88" />
+            </effect>
+        </Line>
+        <Line endX="99.4000244140625" endY="-1.52587890625E-5" layoutX="353.0" layoutY="201.0" startX="-220.5999755859375" startY="-1.52587890625E-5" stroke="WHITE" strokeWidth="4.0">
+            <effect>
+                <BoxBlur height="0.0" width="112.61" />
+            </effect>
+        </Line>
+        <Line endX="104.20001220703125" endY="-1.52587890625E-5" layoutX="353.0" layoutY="293.0" startX="-227.0" startY="-1.52587890625E-5" stroke="WHITE" strokeWidth="4.0">
+            <effect>
+                <BoxBlur height="0.0" width="112.61" />
+            </effect>
+        </Line>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="51.0" prefHeight="64.0" prefWidth="76.0" text="X" textAlignment="CENTER">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="50.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="422.0" layoutY="54.0" prefHeight="54.0" prefWidth="62.0" text="O" textAlignment="CENTER" textFill="#fe9696">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="50.0" />
+            </font>
+        </Label>
+        <Label fx:id="textLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="165.0" layoutY="55.0" prefHeight="54.0" prefWidth="263.0" stylesheets="@../../../css/styles.css" text="rehab vs sondos" textFill="#fff47b">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="37.0" />
+            </font>
+        </Label>
+        <Button fx:id="button0" layoutX="91.0" layoutY="115.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="122.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
+            <font>
+                <Font name="Calisto MT Italic" size="40.0" />
+            </font>
+        </Button>
+        <Button fx:id="button1" layoutX="227.0" layoutY="108.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="144.0" style="-fx-background-color: #97d2d7;">
+            <font>
+                <Font name="Brush Script MT Italic" size="43.0" />
+            </font></Button>
+        <Button fx:id="button2" layoutX="382.0" layoutY="109.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="115.0" style="-fx-background-color: #97d2d7;">
+            <font>
+                <Font name="Brush Script MT Italic" size="43.0" />
+            </font>
+        </Button>
+        <Button fx:id="button3" layoutX="83.0" layoutY="205.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="138.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
+            <font>
+                <Font name="Calisto MT Italic" size="40.0" />
+            </font>
+        </Button>
+        <Button fx:id="button4" layoutX="241.0" layoutY="202.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="115.0" style="-fx-background-color: #97d2d7;">
+            <font>
+                <Font name="Brush Script MT Italic" size="43.0" />
+            </font>
+        </Button>
+        <Button fx:id="button5" layoutX="382.0" layoutY="208.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="115.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
+            <font>
+                <Font name="Calisto MT Italic" size="40.0" />
+            </font>
+        </Button>
+        <Button fx:id="button6" layoutX="91.0" layoutY="309.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="122.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
+            <font>
+                <Font name="Calisto MT Italic" size="40.0" />
+            </font>
+        </Button>
+        <Button fx:id="button7" layoutX="227.0" layoutY="302.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="144.0" style="-fx-background-color: #97d2d7;">
+            <font>
+                <Font name="Brush Script MT Italic" size="43.0" />
+            </font>
+        </Button>
+        <Button fx:id="button8" layoutX="378.0" layoutY="303.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="122.0" style="-fx-background-color: #97d2d7;">
+            <font>
+                <Font name="Brush Script MT Italic" size="43.0" />
+            </font>
+        </Button>
+        <Button id="gameButtons" layoutX="439.0" layoutY="15.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="SAVE" textFill="WHITE">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+            </font>
+        </Button>
+        <Button id="gameButtons" layoutX="27.0" layoutY="15.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="PAUSE" textFill="WHITE">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+            </font>
+        </Button>
+        <Button id="gameButtons" layoutX="238.0" layoutY="15.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="PLAY" textFill="WHITE">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+            </font>
+        </Button>
+        <Button fx:id="Next_Round" id="gameButtons" onAction="#resetGame" layoutX="239.0" layoutY="417.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="Next Round" textFill="WHITE">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+            </font>
+        </Button>
+    </children>
 </AnchorPane>
