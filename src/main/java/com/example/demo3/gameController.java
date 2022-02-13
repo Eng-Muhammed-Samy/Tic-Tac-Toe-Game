@@ -8,13 +8,12 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
-<<<<<<< Updated upstream
 import java.net.URL;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.ResourceBundle;
 
-public class HelloController implements Initializable {
-
-
+public class gameController implements Initializable {
     @FXML
     protected Label textLabel;
 
@@ -192,8 +191,5 @@ public class HelloController implements Initializable {
         });
         Next_Round.setDisable(true);
     }
-=======
-public class HelloController {
-
->>>>>>> Stashed changes
 }
+
