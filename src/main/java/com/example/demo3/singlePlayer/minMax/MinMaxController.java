@@ -1,8 +1,7 @@
-package com.example.demo3;
-import com.example.demo3.GameBasicClass.BasicForGame;
-import com.example.demo3.GameBasicClass.MinMax;
+package com.example.demo3.singlePlayer.minMax;
+import com.example.demo3.User;
+import com.example.demo3.database.models.UserFunctionality;
 import javafx.application.Platform;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -13,7 +12,7 @@ import java.util.Random;
 import java.util.ResourceBundle;
 
 public class MinMaxController   implements Initializable {
-
+    UserFunctionality bd = new UserFunctionality();
 
     @FXML
     protected Label textLabel;
@@ -44,6 +43,22 @@ public class MinMaxController   implements Initializable {
 
     @FXML
     private Button button8;
+
+    @FXML
+    protected void resetGame(){
+        try {
+            bd.insertUser(new User("ayman","ayman@gamil.com", "123456",1));
+//            bd.selectAllUsers();
+//            bd.selectUserByEmail("ahmed@gamil.com");
+//            bd.selectUserByStatus(0);
+//            bd.updateStatusByEmail(1,"ahmed@gamil.com");
+//            bd.selectUserByEmail("ahmed@gamil.com");
+        }catch(Exception ex){
+
+            ex.getMessage();
+        }
+
+    }
 
     int moveNum;
     BasicForGame.Move nextMove;

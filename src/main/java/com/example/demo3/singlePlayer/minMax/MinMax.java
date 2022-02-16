@@ -1,6 +1,6 @@
-package com.example.demo3.GameBasicClass;
+package com.example.demo3.singlePlayer.minMax;
 import javafx.scene.control.Button;
-import com.example.demo3.GameBasicClass.BasicForGame.Move;
+
 public class MinMax {
 
         static int minimax(Button board[][], int depth, Boolean isMax) {
@@ -46,7 +46,7 @@ public class MinMax {
         public static BasicForGame.Move findNextMove(Button board[][])
         {
             int bestVal = -1000;
-            BasicForGame.Move bestMove = new Move();
+            BasicForGame.Move bestMove = new BasicForGame.Move();
             bestMove.row = -1;
             bestMove.col = -1;
             for (int i=0 ; i<3; i++)
