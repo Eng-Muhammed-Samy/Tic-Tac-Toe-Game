@@ -1,4 +1,4 @@
-package com.example.demo3.GameBasicClass;
+package com.example.demo3.singlePlayer.minMax;
 import javafx.scene.control.Button;
 public class BasicForGame {
 
