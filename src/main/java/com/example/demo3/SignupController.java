@@ -1,13 +1,16 @@
 package com.example.demo3;
 
+import com.example.demo3.database.models.UserFunctionality;
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
-import javafx.scene.image.ImageView;
+import javafx.scene.control.Alert;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class SignupController {
+    UserFunctionality userFunctionality = new UserFunctionality();
 
     @FXML
     private TextField usrNameField;
@@ -50,8 +53,7 @@ public class SignupController {
                         "username consists of alphanumeric characters (a-zA-Z0-9), lowercase, or uppercase.");
                 alert.show();
                 return;
-            }else{//Passed all needed checks
-//             addUserToDataBase(usrName,password);
+            }else{
                 System.out.println("Added to the database!");
             }
         }
