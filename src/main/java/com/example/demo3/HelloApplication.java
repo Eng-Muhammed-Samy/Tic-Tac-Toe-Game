@@ -13,7 +13,7 @@ public class HelloApplication extends Application {
 
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("minmax.fxml"));
 
-        Scene scene = new Scene(fxmlLoader.load(),  573, 500);
+        Scene scene = new Scene(fxmlLoader.load(),  573, 400);
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();

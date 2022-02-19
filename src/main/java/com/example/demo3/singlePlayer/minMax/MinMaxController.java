@@ -1,6 +1,7 @@
 package com.example.demo3.singlePlayer.minMax;
 //import com.example.demo3.User;
 //import com.example.demo3.database.models.UserFunctionality;
+
 import com.example.demo3.singlePlayer.minMax.levels.EasyLevel;
 import com.example.demo3.singlePlayer.minMax.levels.HardLevel;
 import com.example.demo3.singlePlayer.minMax.levels.MediumLevel;
@@ -80,7 +81,7 @@ public class MinMaxController   implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-       board[0][0] =button0;
+        board[0][0]=button0;
         board[0][1]=button1;
         board[0][2]=button2;
         board[1][0]=button3;
@@ -99,32 +100,20 @@ public class MinMaxController   implements Initializable {
    @FXML
     protected void resetGame(){
 
-        for (Button[] btns : board) {
-            for (Button btn : btns) {
-              this.resetButtons(btn);
-
-
-            }
-        }
-       board[0][0] =button0;
-       board[0][1]=button1;
-       board[0][2]=button2;
-       board[1][0]=button3;
-       board[1][1]=button4;
-       board[1][2]=button5;
-       board[2][0]=button6;
-       board[2][1]=button7;
-       board[2][2]=button8;
+       for (Button[] btns : board) {
+           for (Button btn : btns) {
+               btn.setText("");
+           }
+       }
        ran = new Random();
        moveNum = flag = 0;
-       Next_Round.setDisable(true);
+//       Next_Round.setDisable(true);
        setActionOnBtn(board);
 
     }
 
-    public void resetButtons(Button button){//Function to reset the game board could be used for "next round"
-            button.setText("");
-    }
+
+
     private void setActionOnBtn(Button[][] board) {
 
         for (Button[] btns : board) {

@@ -88,22 +88,22 @@
                 <Font name="Brush Script MT Italic" size="43.0" />
             </font>
         </Button>
-        <Button id="gameButtons" layoutX="439.0" layoutY="15.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="SAVE" textFill="WHITE">
+        <Button id="gameButtons" layoutX="439.0" layoutY="15.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" style="-fx-cursor: hand;" styleClass="buttons" stylesheets="@../../../css/styles.css" text="SAVE" textFill="WHITE">
             <font>
                 <Font name="Berlin Sans FB Demi Bold" size="17.0" />
             </font>
         </Button>
-        <Button id="gameButtons" layoutX="27.0" layoutY="15.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="PAUSE" textFill="WHITE">
+        <Button id="gameButtons" layoutX="27.0" layoutY="15.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" style="-fx-cursor: hand;" styleClass="buttons" stylesheets="@../../../css/styles.css" text="PAUSE" textFill="WHITE">
             <font>
                 <Font name="Berlin Sans FB Demi Bold" size="17.0" />
             </font>
         </Button>
-        <Button id="gameButtons" layoutX="238.0" layoutY="15.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="PLAY" textFill="WHITE">
+        <Button id="gameButtons" layoutX="238.0" layoutY="15.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" style="-fx-cursor: hand;" styleClass="buttons" stylesheets="@../../../css/styles.css" text="PLAY" textFill="WHITE">
             <font>
                 <Font name="Berlin Sans FB Demi Bold" size="17.0" />
             </font>
         </Button>
-        <Button fx:id="Next_Round" id="gameButtons" onAction="#resetGame" layoutX="239.0" layoutY="417.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="Next Round" textFill="WHITE">
+        <Button id="gameButtons" fx:id="Next_Round" layoutX="239.0" layoutY="417.0" mnemonicParsing="false" onAction="#resetGame" prefHeight="26.0" prefWidth="123.0" style="-fx-cursor: hand;" styleClass="buttons" stylesheets="@../../../css/styles.css" text="Next Round" textFill="WHITE">
             <font>
                 <Font name="Berlin Sans FB Demi Bold" size="17.0" />
             </font>
