@@ -7,7 +7,7 @@ public class BasicForGame {
         public int row, col;
     }
 
-    static String player = "X", opponent = "O";
+    public static String player = "X", opponent = "O";
 
     public static Boolean isMoveLeft(Button board[][]) {
         for (int i = 0; i < 3; i++) {
