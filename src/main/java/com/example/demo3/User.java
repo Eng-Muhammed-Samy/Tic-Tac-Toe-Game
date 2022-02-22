@@ -5,7 +5,6 @@ import java.net.Socket;
 public class User {
     private int id;
     private String name;
-    private String email;
     private String password;
     private int status;
     private Socket socket;
@@ -16,25 +15,22 @@ public class User {
         this.socket = socket;
     }
 
-    public User(String name, String email, String password, int status) {
+    public User(String name, String password, int status) {
         this.name = name;
-        this.email = email;
         this.password = password;
         this.status = status;
     }
 
-    public User(int id, String name, String email, String password, int status) {
+    public User(int id, String name, String password, int status) {
         this.id = id;
         this.name = name;
-        this.email = email;
         this.password = password;
         this.status = status;
     }
 
-    public User(int id, String name, String email, String password, int status, Socket socket) {
+    public User(int id, String name, String password, int status, Socket socket) {
         this.id = id;
         this.name = name;
-        this.email = email;
         this.password = password;
         this.status = status;
         this.socket = socket;
@@ -56,13 +52,6 @@ public class User {
         this.name = name;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
     public String getPassword() {
         return password;

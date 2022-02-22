@@ -19,7 +19,7 @@
       </ImageView>
       <AnchorPane layoutX="308.0" prefHeight="400.0" prefWidth="276.0" style="-fx-background-color: rgb(254,150,150);" AnchorPane.topAnchor="0.0">
          <children>
-            <Button id="loginButton" fx:id="signupButton" onMouseClicked="#registerUser" layoutX="70.0" layoutY="312.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="SIGN UP" textFill="WHITE">
+            <Button id="loginButton" fx:id="signupButton" onAction="#registerUser" layoutX="70.0" layoutY="312.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="SIGN UP" textFill="WHITE">
                <font>
                   <Font name="Berlin Sans FB Demi Bold" size="17.0" />
                </font>

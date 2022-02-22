@@ -7,13 +7,12 @@ import java.sql.SQLException;
 
 public class UserFunctionality extends DBConection{
     public void insertUser(User user) throws SQLException {
-        String insertQuery = "INSERT INTO users(NAME, EMAIL, PASSWORD, STATUS) VALUES(?,?,?,?)";
+        String insertQuery = "INSERT INTO users(NAME, PASSWORD, STATUS) VALUES(?,?,?)";
         preparedStatement = connect().prepareStatement(insertQuery);
         preparedStatement.setString(1, user.getName());
-        preparedStatement.setString(2,user.getEmail());
-        preparedStatement.setString(3,user.getPassword());
-        preparedStatement.setInt(4,user.getStatus());
-        resultSet = preparedStatement.executeQuery();
+        preparedStatement.setString(2,user.getPassword());
+        preparedStatement.setInt(3,user.getStatus());
+        preparedStatement.executeUpdate();
     }
 
     public ResultSet selectAllUsers() throws SQLException{
@@ -22,12 +21,17 @@ public class UserFunctionality extends DBConection{
         resultSet = statement.executeQuery(selectAllUsersQuery);
         return resultSet;
     }
-    public ResultSet selectUserByUserName(String userName) throws SQLException{
+
+    public String selectUserByUserName(String userName) throws SQLException{
         String selectUserByEmailQuery = "SELECT * FROM users WHERE NAME = ?";
         preparedStatement = connect().prepareStatement(selectUserByEmailQuery);
         preparedStatement.setString(1, userName);
         resultSet = preparedStatement.executeQuery();
-        return resultSet;
+        String user = "";
+        while (resultSet.next()){
+            user = resultSet.getString("name");
+        }
+       return user;
     }
 
     public ResultSet selectUserByStatus(int status) throws SQLException{
