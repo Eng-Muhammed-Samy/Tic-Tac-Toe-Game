@@ -22,16 +22,11 @@ public class UserFunctionality extends DBConection{
         resultSet = statement.executeQuery(selectAllUsersQuery);
         return resultSet;
     }
-    public ResultSet selectUserByEmail(String email) throws SQLException{
-        String selectUserByEmailQuery = "SELECT * FROM users WHERE EMAIL = ?";
+    public ResultSet selectUserByUserName(String userName) throws SQLException{
+        String selectUserByEmailQuery = "SELECT * FROM users WHERE NAME = ?";
         preparedStatement = connect().prepareStatement(selectUserByEmailQuery);
-        preparedStatement.setString(1, email);
+        preparedStatement.setString(1, userName);
         resultSet = preparedStatement.executeQuery();
-        while (resultSet.next()){
-            System.out.println(resultSet.getString("NAME"));
-            System.out.println(resultSet.getString("EMAIL"));
-            System.out.println(resultSet.getString("PASSWORD"));
-        }
         return resultSet;
     }
 

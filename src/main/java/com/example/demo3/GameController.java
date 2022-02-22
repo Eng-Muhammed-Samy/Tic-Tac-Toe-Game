@@ -56,9 +56,6 @@ public class GameController implements Initializable {
     public String checkBoard(){ //Sweeps the whole board for each line
         String line = null;
         for(int i=0;i<8;i++){
-            //0,1,2
-            //3,4,5
-            //6,7,8
             line = switch (i) {
                 case 0 -> button0.getText() + button1.getText() + button2.getText();
                 case 1 -> button3.getText() + button4.getText() + button5.getText();
