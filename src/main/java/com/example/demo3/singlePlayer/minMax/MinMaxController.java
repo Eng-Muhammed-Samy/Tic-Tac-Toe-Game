@@ -6,7 +6,10 @@ import com.example.demo3.singlePlayer.minMax.levels.EasyLevel;
 import com.example.demo3.singlePlayer.minMax.levels.HardLevel;
 import com.example.demo3.singlePlayer.minMax.levels.MediumLevel;
 import javafx.application.Platform;
+import javafx.concurrent.Task;
+import javafx.concurrent.WorkerStateEvent;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -17,8 +20,6 @@ import java.util.Random;
 import java.util.ResourceBundle;
 
 public class MinMaxController   implements Initializable {
-//    UserFunctionality bd = new UserFunctionality();
-
     @FXML
     protected Label textLabel;
 
@@ -56,28 +57,11 @@ public class MinMaxController   implements Initializable {
     int flag = 0;
     Random ran;
     Button board[][]=new Button[3][3];
-    void scoreScreen(Button[][] board) {
-
-        int result = BasicForGame.evaluate(board);
-        if (result == 10) {
-            System.out.println("You lost :(");
-            textLabel.setText("you  lost!");
-
-        } else if (result == -10) {
-            textLabel.setText("you  won!");
-
-        } else if (BasicForGame.isMoveLeft(board) == false) {
-            System.out.println("No One!");
-            textLabel.setText("Draw");
-
-        }
-        Next_Round.setDisable(false);
-    }
+    private int xWins=0;
+    private int oWins=0;
+    private String score;
 
 
-    void changeFlag(int num) {
-        flag = num;
-    }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -97,22 +81,85 @@ public class MinMaxController   implements Initializable {
         setActionOnBtn(board);
 
     }
-   @FXML
+    @FXML
     protected void resetGame(){
-
-       for (Button[] btns : board) {
-           for (Button btn : btns) {
-               btn.setText("");
-           }
-       }
-       ran = new Random();
-       moveNum = flag = 0;
-//       Next_Round.setDisable(true);
-       setActionOnBtn(board);
+        for (Button[] btns : board) {
+            for (Button btn : btns) {
+                btn.setText("");
+                btn.setMouseTransparent(false);
+            }
+        }
+        ran = new Random();
+        moveNum = flag = 0;
+        Next_Round.setDisable(true);
+        setActionOnBtn(board);
 
     }
 
+    void scoreScreen(Button[][] board) {
 
+        int result = BasicForGame.evaluate(board);
+        if (result == 10) {
+            for (Button[] btns : board) {
+                for (Button btn : btns) {
+                    btn.setMouseTransparent(true);
+                }
+            }
+            xWins++;
+            textLabel.setText("you  lost!");
+            waitAndPrint();
+            Next_Round.setDisable(false);
+
+        } else if (result == -10) {
+            for (Button[] btns : board) {
+                for (Button btn : btns) {
+                    btn.setMouseTransparent(true);
+                }
+            }
+            oWins++;
+            textLabel.setText("you  won!");
+            waitAndPrint();
+            Next_Round.setDisable(false);
+
+        } else if (BasicForGame.isMoveLeft(board) == false) {
+            for (Button[] btns : board) {
+                for (Button btn : btns) {
+                    btn.setMouseTransparent(true);
+                }
+            }
+            System.out.println("No One!");
+            textLabel.setText("Draw");
+            waitAndPrint();
+            Next_Round.setDisable(false);
+
+        }
+
+    }
+
+    public void waitAndPrint(){
+        score=xWins+" : "+oWins;
+        Task<Void> sleeper = new Task<Void>() {
+            @Override
+            protected Void call() throws Exception {
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                }
+                return null;
+            }
+        };
+        sleeper.setOnSucceeded(new EventHandler<WorkerStateEvent>() {
+            @Override
+            public void handle(WorkerStateEvent event) {
+                textLabel.setText(score);
+            }
+        });
+        new Thread(sleeper).start();
+    }
+
+    void changeFlag(int num) {
+        flag = num;
+    }
 
     private void setActionOnBtn(Button[][] board) {
 
@@ -150,7 +197,6 @@ public class MinMaxController   implements Initializable {
                                                     scoreScreen(board);
 
                                                 });
-                                                Next_Round.setDisable(false);
                                             }
 
                                         }
@@ -193,7 +239,6 @@ public class MinMaxController   implements Initializable {
                                                     scoreScreen(board);
 
                                                 });
-                                                Next_Round.setDisable(false);
                                             }
 
                                         }
@@ -231,11 +276,9 @@ public class MinMaxController   implements Initializable {
                                             });
                                             moveNum += 2;
                                             if (moveNum >= 5) {
-
                                                 Platform.runLater(() -> {
                                                     scoreScreen(board);
                                                 });
-                                                Next_Round.setDisable(false);
                                             }
 
                                         }
