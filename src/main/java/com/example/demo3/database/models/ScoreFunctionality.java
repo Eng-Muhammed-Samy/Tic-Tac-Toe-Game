@@ -31,6 +31,7 @@ public class ScoreFunctionality extends DBConection{
         }
         return score;
     }
+
     public int sumOfScoresForLoginUser(String name) throws SQLException {
         String id = "SELECT id FROM users WHERE name = ?";
         String query = "SELECT sum(score) as score FROM scores where player1id = ?";
@@ -51,7 +52,7 @@ public class ScoreFunctionality extends DBConection{
     return sumScore;
     }
 
-    public boolean insertUserScore(String player1Name, String player2Name, int score)throws SQLException{
+    public void insertUserScore(String player1Name, String player2Name, int score)throws SQLException{
         int p1Id =0, p2Id =0;
         String id1 = "SELECT id FROM users where name = ?";
         preparedStatement = connect().prepareStatement(id1);
@@ -68,19 +69,21 @@ public class ScoreFunctionality extends DBConection{
             p2Id = resultSet.getInt("id");
         }
         int score1 = this.selectScoreWithSpecificUser(player1Name, player2Name);
-        System.out.println(score1);
+        String query;
         if(score1 == -1) {
-            String query = "INSERT INTO scores (player1Id, player2Id, score) values(?,?,?)";
+            query = "INSERT INTO scores (player1Id, player2Id, score) values(?,?,?)";
             preparedStatement = connect().prepareStatement(query);
             preparedStatement.setInt(1, p1Id);
             preparedStatement.setInt(2, p2Id);
             preparedStatement.setInt(3, score);
-            preparedStatement.executeUpdate();
-            return true;
         }else{
-            return false;
+            query = "UPDATE  scores SET score = ? where player1id =? and player2id = ?";
+            preparedStatement = connect().prepareStatement(query);
+            preparedStatement.setInt(1, score);
+            preparedStatement.setInt(2, p1Id);
+            preparedStatement.setInt(3, p2Id);
         }
+        preparedStatement.executeUpdate();
     }
-//    public void updateUserScore(String email){}
 
 }

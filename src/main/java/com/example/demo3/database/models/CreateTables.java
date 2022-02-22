@@ -8,7 +8,6 @@ public class CreateTables extends DBConection{
             + "("
             + " ID serial,"
             + " NAME varchar(50) NOT NULL,"
-            + " EMAIL varchar(50) NOT NULL,"
             + " PASSWORD varchar(50) NOT NULL,"
             + "STATUS int,"
             + " PRIMARY KEY (ID)"

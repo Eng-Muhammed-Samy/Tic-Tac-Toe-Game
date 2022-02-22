@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.32">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>949</IntrospectionStateNumber>
+      <IntrospectionStateNumber>958</IntrospectionStateNumber>
       <ServerVersion>14.1</ServerVersion>
       <StartupTime>1644856653</StartupTime>
       <TimeZones>true ACDT
@@ -817,7 +817,7 @@ false Zulu
 13388||10|C|G
 13388||-9223372036854775808|U|G
 13388||10|U|G</Grants>
-      <IntrospectionStateNumber>950</IntrospectionStateNumber>
+      <IntrospectionStateNumber>959</IntrospectionStateNumber>
       <ObjectId>24700</ObjectId>
       <Relations>sequence|table|24741|24742|1
 </Relations>
@@ -4240,7 +4240,7 @@ false Zulu
     <schema id="265" parent="6" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>950</IntrospectionStateNumber>
+      <IntrospectionStateNumber>959</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -4344,27 +4344,20 @@ player2id</ColNames>
       <StateNumber>888</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="278" parent="268" name="email">
-      <DataType>varchar(50)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StateNumber>888</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="279" parent="268" name="password">
+    <column id="278" parent="268" name="password">
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>888</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="280" parent="268" name="status">
+    <column id="279" parent="268" name="status">
       <DataType>integer|0s</DataType>
       <Position>5</Position>
       <StateNumber>888</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="281" parent="268" name="users_pkey">
+    <index id="280" parent="268" name="users_pkey">
       <ClassIds>1978</ClassIds>
       <ColNames>id</ColNames>
       <CollationIds>0</CollationIds>
@@ -4375,7 +4368,7 @@ player2id</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="282" parent="268" name="users_pkey">
+    <key id="281" parent="268" name="users_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24747</ObjectId>

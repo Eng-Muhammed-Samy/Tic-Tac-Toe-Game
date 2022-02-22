@@ -43,11 +43,11 @@ public class UserFunctionality extends DBConection{
         return resultSet;
     }
 
-    public void updateStatusByEmail(int status, String email) throws SQLException{
-        String updateStatusOfUserByEmail = "UPDATE users SET STATUS = ? WHERE EMAIL = ?";
+    public void updateStatusByUsername(int status, String username) throws SQLException{
+        String updateStatusOfUserByEmail = "UPDATE users SET STATUS = ? WHERE NAME = ?";
         preparedStatement = connect().prepareStatement(updateStatusOfUserByEmail);
         preparedStatement.setInt(1, status);
-        preparedStatement.setString(2, email);
+        preparedStatement.setString(2, username);
         resultSet = preparedStatement.executeQuery();
         if(resultSet.next()) {
             System.out.println("done");
