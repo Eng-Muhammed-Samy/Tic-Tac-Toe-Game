@@ -16,7 +16,7 @@ public class CreateTables extends DBConection{
     private static final String SQL_CREATE_SCORE = "CREATE TABLE IF NOT EXISTS scores("+
             "player1id int, "+
             "player2id int," +
-            "score int," +
+            "score int default -1," +
             "primary key (player1id,player2id)," +
             "foreign key(player1id) references users(id)," +
             "foreign key(player2id) references users(id)" +
