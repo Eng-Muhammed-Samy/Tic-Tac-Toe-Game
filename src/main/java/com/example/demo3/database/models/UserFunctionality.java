@@ -34,6 +34,29 @@ public class UserFunctionality extends DBConection{
        return user;
     }
 
+    public boolean ifUserFound(String userName)throws SQLException{
+        String selectUserByEmailQuery = "SELECT * FROM users WHERE NAME = ?";
+        preparedStatement = connect().prepareStatement(selectUserByEmailQuery);
+        preparedStatement.setString(1, userName);
+        resultSet = preparedStatement.executeQuery();
+        while (resultSet.next()){
+            return true;
+        }
+        return false;
+    }
+
+    public  String SelectPasswordForUser(String userName)throws Exception{
+        String selectUserByEmailQuery = "SELECT password FROM users WHERE NAME = ?";
+        preparedStatement = connect().prepareStatement(selectUserByEmailQuery);
+        preparedStatement.setString(1, userName);
+        resultSet = preparedStatement.executeQuery();
+        String pass = "";
+        while (resultSet.next()){
+            pass = resultSet.getString("password");
+        }
+        return pass;
+    }
+
     public ResultSet selectUserByStatus(int status) throws SQLException{
         String selectUserByEmailQuery = "SELECT * FROM users WHERE STATUS = ?";
         preparedStatement = connect().prepareStatement(selectUserByEmailQuery);
