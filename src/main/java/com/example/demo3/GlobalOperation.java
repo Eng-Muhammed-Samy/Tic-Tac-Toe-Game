@@ -11,7 +11,7 @@ import java.io.IOException;
 public class GlobalOperation {
     public static void changeScene(ActionEvent event, String fxml){
         Scene scene = null;
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(fxml));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(fxml+".fxml"));
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         try {
             scene = new Scene(fxmlLoader.load(),  573, 500);

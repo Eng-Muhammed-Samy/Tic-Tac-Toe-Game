@@ -86,4 +86,13 @@ public class ScoreFunctionality extends DBConection{
         preparedStatement.executeUpdate();
     }
 
+
 }
+
+
+
+
+
+
+
+
