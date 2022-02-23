@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.32">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>958</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1002</IntrospectionStateNumber>
       <ServerVersion>14.1</ServerVersion>
       <StartupTime>1644856653</StartupTime>
       <TimeZones>true ACDT
@@ -817,7 +817,7 @@ false Zulu
 13388||10|C|G
 13388||-9223372036854775808|U|G
 13388||10|U|G</Grants>
-      <IntrospectionStateNumber>959</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1003</IntrospectionStateNumber>
       <ObjectId>24700</ObjectId>
       <Relations>sequence|table|24741|24742|1
 </Relations>
@@ -4240,7 +4240,7 @@ false Zulu
     <schema id="265" parent="6" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>959</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1003</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -4251,40 +4251,149 @@ false Zulu
       <StateNumber>888</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <table id="267" parent="265" name="scores">
+    <table id="267" parent="265" name="board">
+      <ObjectId>24784</ObjectId>
+      <StateNumber>997</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="268" parent="265" name="scores">
       <ObjectId>24748</ObjectId>
       <StateNumber>892</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="268" parent="265" name="users">
+    <table id="269" parent="265" name="users">
       <ObjectId>24742</ObjectId>
       <StateNumber>892</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <column id="269" parent="267" name="player1id">
+    <column id="270" parent="267" name="cell1">
+      <DataType>varchar(1)|0s</DataType>
+      <Position>1</Position>
+      <StateNumber>993</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="271" parent="267" name="cell2">
+      <DataType>varchar(1)|0s</DataType>
+      <Position>2</Position>
+      <StateNumber>993</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="272" parent="267" name="cell3">
+      <DataType>varchar(1)|0s</DataType>
+      <Position>3</Position>
+      <StateNumber>993</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="273" parent="267" name="cell4">
+      <DataType>varchar(1)|0s</DataType>
+      <Position>4</Position>
+      <StateNumber>993</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="274" parent="267" name="cell5">
+      <DataType>varchar(1)|0s</DataType>
+      <Position>5</Position>
+      <StateNumber>993</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="275" parent="267" name="cell6">
+      <DataType>varchar(1)|0s</DataType>
+      <Position>6</Position>
+      <StateNumber>993</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="276" parent="267" name="cell7">
+      <DataType>varchar(1)|0s</DataType>
+      <Position>7</Position>
+      <StateNumber>993</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="277" parent="267" name="cell8">
+      <DataType>varchar(1)|0s</DataType>
+      <Position>8</Position>
+      <StateNumber>993</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="278" parent="267" name="cell9">
+      <DataType>varchar(1)|0s</DataType>
+      <Position>9</Position>
+      <StateNumber>993</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="279" parent="267" name="id">
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+      <StateNumber>993</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="280" parent="267" name="datetime">
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+      <StateNumber>997</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <foreign-key id="281" parent="267" name="board_id_fkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>24789</ObjectId>
+      <RefColNames>id</RefColNames>
+      <RefColPositions>1</RefColPositions>
+      <RefKeyName>users_pkey</RefKeyName>
+      <StateNumber>993</StateNumber>
+      <RefTableId>24742</RefTableId>
+      <RefTableName>users</RefTableName>
+      <RefTableKind>table</RefTableKind>
+    </foreign-key>
+    <index id="282" parent="267" name="board_pkey">
+      <ClassIds>1978,3126</ClassIds>
+      <ColNames>id
+datetime</ColNames>
+      <CollationIds>0,100</CollationIds>
+      <CollationNames>
+default</CollationNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>24794</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>997</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="283" parent="267" name="board_pkey">
+      <ColNames>id
+datetime</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>24795</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>997</StateNumber>
+      <UnderlyingIndexId>24794</UnderlyingIndexId>
+    </key>
+    <column id="284" parent="268" name="player1id">
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>892</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="270" parent="267" name="player2id">
+    <column id="285" parent="268" name="player2id">
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>892</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="271" parent="267" name="score">
+    <column id="286" parent="268" name="score">
       <DataType>integer|0s</DataType>
       <DefaultExpression>&apos;-1&apos;::integer</DefaultExpression>
       <Position>3</Position>
       <StateNumber>947</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="272" parent="267" name="scores_player1id_fkey">
+    <foreign-key id="287" parent="268" name="scores_player1id_fkey">
       <ColNames>player1id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24753</ObjectId>
@@ -4296,7 +4405,7 @@ false Zulu
       <RefTableName>users</RefTableName>
       <RefTableKind>table</RefTableKind>
     </foreign-key>
-    <foreign-key id="273" parent="267" name="scores_player2id_fkey">
+    <foreign-key id="288" parent="268" name="scores_player2id_fkey">
       <ColNames>player2id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24758</ObjectId>
@@ -4308,7 +4417,7 @@ false Zulu
       <RefTableName>users</RefTableName>
       <RefTableKind>table</RefTableKind>
     </foreign-key>
-    <index id="274" parent="267" name="scores_pkey">
+    <index id="289" parent="268" name="scores_pkey">
       <ClassIds>1978,1978</ClassIds>
       <ColNames>player1id
 player2id</ColNames>
@@ -4320,7 +4429,7 @@ player2id</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="275" parent="267" name="scores_pkey">
+    <key id="290" parent="268" name="scores_pkey">
       <ColNames>player1id
 player2id</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -4329,7 +4438,7 @@ player2id</ColNames>
       <StateNumber>892</StateNumber>
       <UnderlyingIndexId>24751</UnderlyingIndexId>
     </key>
-    <column id="276" parent="268" name="id">
+    <column id="291" parent="269" name="id">
       <DataType>integer|0s</DataType>
       <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -4337,27 +4446,27 @@ player2id</ColNames>
       <StateNumber>888</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="277" parent="268" name="name">
+    <column id="292" parent="269" name="name">
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>888</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="278" parent="268" name="password">
+    <column id="293" parent="269" name="password">
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>888</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="279" parent="268" name="status">
+    <column id="294" parent="269" name="status">
       <DataType>integer|0s</DataType>
       <Position>5</Position>
       <StateNumber>888</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="280" parent="268" name="users_pkey">
+    <index id="295" parent="269" name="users_pkey">
       <ClassIds>1978</ClassIds>
       <ColNames>id</ColNames>
       <CollationIds>0</CollationIds>
@@ -4368,7 +4477,7 @@ player2id</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="281" parent="268" name="users_pkey">
+    <key id="296" parent="269" name="users_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24747</ObjectId>

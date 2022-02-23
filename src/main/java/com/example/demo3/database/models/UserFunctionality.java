@@ -62,11 +62,6 @@ public class UserFunctionality extends DBConection{
         preparedStatement = connect().prepareStatement(selectUserByEmailQuery);
         preparedStatement.setInt(1, status);
         resultSet = preparedStatement.executeQuery();
-//        while (resultSet.next()){
-//            System.out.println(resultSet.getString("NAME"));
-//            System.out.println(resultSet.getString("EMAIL"));
-//            System.out.println(resultSet.getString("PASSWORD"));
-//        }
         return resultSet;
     }
 
@@ -79,5 +74,16 @@ public class UserFunctionality extends DBConection{
         if(resultSet.next()) {
             System.out.println("done");
         }
+    }
+    public int getIdByUsername(String username)throws SQLException{
+        String query = "SELECT id from users WHERE name = ?";
+        preparedStatement = connect().prepareStatement(query);
+        preparedStatement.setString(1, username);
+        resultSet = preparedStatement.executeQuery();
+        int id = -1;
+        while (resultSet.next()){
+            id = resultSet.getInt("id");
+        }
+        return id;
     }
 }

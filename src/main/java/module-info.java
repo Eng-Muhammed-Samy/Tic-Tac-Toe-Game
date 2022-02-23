@@ -11,4 +11,6 @@ module com.example.demo3 {
     exports com.example.demo3;
     exports com.example.demo3.singlePlayer.minMax;
     opens com.example.demo3.singlePlayer.minMax to javafx.fxml;
+    exports com.example.demo3.controllers;
+    opens com.example.demo3.controllers to javafx.fxml;
 }

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgb(171,210,215);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.HelloController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgb(171,210,215);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.controllers.LoseController">
    <children>
       <Label id="textLabel" layoutX="157.0" layoutY="129.0" prefHeight="70.0" prefWidth="237.0" stylesheets="@../../../css/styles.css" text="You lost">
          <font>
@@ -19,12 +19,12 @@
             <Image url="@../../../images/sad-face-emoji.gif" />
          </image>
       </ImageView>
-      <Button id="loginButton" layoutX="127.0" layoutY="277.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="play again" textFill="WHITE">
+      <Button id="loginButton" onAction="#playAgain" layoutX="127.0" layoutY="277.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="play again" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="21.0" />
          </font>
       </Button>
-      <Button id="gameButtons" layoutX="322.0" layoutY="277.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="Main menu" textFill="WHITE">
+      <Button id="gameButtons" onAction="#mainMenu" layoutX="322.0" layoutY="277.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="Main menu" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="21.0" />
          </font>
