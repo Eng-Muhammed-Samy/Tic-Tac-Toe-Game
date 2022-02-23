@@ -20,13 +20,33 @@ public class CreateTables extends DBConection{
             "foreign key(player1id) references users(id)," +
             "foreign key(player2id) references users(id)" +
             ")";
-
+    private static final String SQL_CREATE_BOARD = "CREATE TABLE IF NOT EXISTS board"
+            +"("
+            +"cell1 varchar(1),"
+            +"cell2 varchar(1),"
+            +"cell3 varchar(1),"
+            +"cell4 varchar(1),"
+            +"cell5 varchar(1),"
+            +"cell6 varchar(1),"
+            +"cell7 varchar(1),"
+            +"cell8 varchar(1),"
+            +"cell9 varchar(1),"
+            +"ID int ,"
+            +"dateTime varchar(50),"
+            +"primary key(ID, dateTime),"
+            +"foreign key(id) references users(id)"
+            +")";
     public void createTableUsers() throws SQLException {
         statement = connect().createStatement();
-        resultSet = statement.executeQuery(SQL_CREATE_USER);
+        statement.executeUpdate(SQL_CREATE_USER);
     }
     public void createTableScore()throws Exception{
         statement = connect().createStatement();
-        resultSet = statement.executeQuery(SQL_CREATE_SCORE);
+        statement.executeUpdate(SQL_CREATE_SCORE);
+    }
+
+    public void  createTableBoard()throws SQLException{
+        statement = connect().createStatement();
+        statement.executeUpdate(SQL_CREATE_BOARD);
     }
 }

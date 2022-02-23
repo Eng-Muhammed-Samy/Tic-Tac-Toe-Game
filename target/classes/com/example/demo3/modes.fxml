@@ -6,14 +6,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="parent" prefHeight="393.0" prefWidth="532.0" stylesheets="@../../../css/styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.HelloController">
+<AnchorPane id="parent" stylesheets="@../../../css/styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.controllers.ModesController">
    <children>
       <ImageView fitHeight="400.0" fitWidth="687.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../images/mode.gif" />
          </image>
       </ImageView>
-      <Button id="loginButton" layoutX="91.0" layoutY="57.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="162.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="Sngle Player" textFill="WHITE">
+      <Button id="loginButton" layoutX="91.0" layoutY="57.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="162.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="Single Player" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="20.0" />
          </font>
