@@ -5,15 +5,16 @@ import com.example.demo3.controllers.GlobalOperation;
 import com.example.demo3.database.models.UserFunctionality;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.fxml.Initializable;
+import javafx.scene.control.*;
 
+import java.net.URL;
 import java.sql.SQLException;
+import java.util.ResourceBundle;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class SignupController {
+public class SignupController implements Initializable {
     UserFunctionality userFunctionality = new UserFunctionality();
 
     @FXML
@@ -24,6 +25,12 @@ public class SignupController {
 
     @FXML
     private PasswordField confirmPasswordField;
+
+    @FXML
+    private Button signupButton;
+    @FXML
+    private Hyperlink loginLink;
+
 
     public void registerUser(ActionEvent event){
         String usrName = usrNameField.getText();
@@ -78,6 +85,22 @@ public class SignupController {
             }
         }
     }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        signupButton.setOnAction(actionEvent -> {
+            try {
+                GlobalOperation.changeScene(actionEvent,"main_menu");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
+        loginLink.setOnAction((e)->{
+            GlobalOperation.changeScene(e,"login");
+        });
+    }
+
+
 //    //should return user
 //    private void addUserToDataBase(String usrName, String password) {
 //

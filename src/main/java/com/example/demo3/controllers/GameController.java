@@ -7,6 +7,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
+
 import java.net.URL;
 import java.util.*;
 
@@ -44,6 +46,11 @@ public class GameController implements Initializable {
 
     @FXML
     private Button Next_Round;
+    @FXML
+    private AnchorPane root;
+
+
+
 
     private int playerTurn = 0;
     private int xWins=0;
@@ -119,6 +126,7 @@ public class GameController implements Initializable {
             xWins++;
             waitAndPrint();
             Next_Round.setDisable(false);
+            GlobalOperation.changeSceneWithoutEvent(root,"win");
         }
         //O winner
         else if (winner.equals("O")) {
@@ -126,6 +134,8 @@ public class GameController implements Initializable {
             oWins++;
             waitAndPrint();
             Next_Round.setDisable(false);
+            GlobalOperation.changeSceneWithoutEvent(root,"win");
+            
         }
     }
     public void disableButtonsOnCommand(){

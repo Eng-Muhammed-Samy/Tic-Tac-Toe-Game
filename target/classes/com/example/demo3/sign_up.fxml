@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
@@ -19,7 +20,7 @@
       </ImageView>
       <AnchorPane layoutX="308.0" prefHeight="400.0" prefWidth="276.0" style="-fx-background-color: rgb(254,150,150);" AnchorPane.topAnchor="0.0">
          <children>
-            <Button id="loginButton" fx:id="signupButton" onAction="#registerUser" layoutX="70.0" layoutY="312.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="SIGN UP" textFill="WHITE">
+            <Button id="loginButton" fx:id="signupButton" layoutX="70.0" layoutY="312.0" mnemonicParsing="false" onAction="#registerUser" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="SIGN UP" textFill="WHITE">
                <font>
                   <Font name="Berlin Sans FB Demi Bold" size="17.0" />
                </font>
@@ -45,11 +46,6 @@
                   <Font name="Berlin Sans FB Demi Bold" size="48.0" />
                </font>
             </Label>
-            <Label id="signUpLabel" layoutX="112.0" layoutY="350.0" prefHeight="20.0" prefWidth="39.0" stylesheets="@../../../css/styles.css" text="login" textFill="#373e48" underline="true">
-               <font>
-                  <Font name="Berlin Sans FB" size="17.0" />
-               </font>
-            </Label>
             <PasswordField fx:id="passwordField" focusTraversable="false" layoutX="24.0" layoutY="193.0" prefHeight="26.0" prefWidth="215.0" promptText="password" style="-fx-border-radius: 100px;" styleClass="buttons" stylesheets="@../../../css/styles.css">
                <effect>
                   <Glow />
@@ -60,6 +56,11 @@
                   <Glow />
                </effect>
             </PasswordField>
+            <Hyperlink fx:id="loginLink" layoutX="118.0" layoutY="347.0" text="login" underline="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Hyperlink>
          </children>
       </AnchorPane>
    </children>

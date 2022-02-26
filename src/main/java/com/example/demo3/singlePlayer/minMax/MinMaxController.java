@@ -2,6 +2,8 @@ package com.example.demo3.singlePlayer.minMax;
 //import com.example.demo3.User;
 //import com.example.demo3.database.models.UserFunctionality;
 
+import com.example.demo3.HelloApplication;
+import com.example.demo3.controllers.GlobalOperation;
 import com.example.demo3.singlePlayer.minMax.levels.EasyLevel;
 import com.example.demo3.singlePlayer.minMax.levels.HardLevel;
 import com.example.demo3.singlePlayer.minMax.levels.MediumLevel;
@@ -11,10 +13,15 @@ import javafx.concurrent.WorkerStateEvent;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.Random;
 import java.util.ResourceBundle;
@@ -51,6 +58,9 @@ public class MinMaxController   implements Initializable {
     private Button button8;
     @FXML
     private Button Next_Round;
+
+    @FXML
+    private AnchorPane root;
 
     int moveNum;
     BasicForGame.Move nextMove;
@@ -109,6 +119,7 @@ public class MinMaxController   implements Initializable {
             textLabel.setText("you  lost!");
             waitAndPrint();
             Next_Round.setDisable(false);
+           GlobalOperation.changeSceneWithoutEvent(root,"lose_single_player");
 
         } else if (result == -10) {
             for (Button[] btns : board) {
@@ -120,6 +131,7 @@ public class MinMaxController   implements Initializable {
             textLabel.setText("you  won!");
             waitAndPrint();
             Next_Round.setDisable(false);
+            GlobalOperation.changeSceneWithoutEvent(root,"win_single_player");
 
         } else if (BasicForGame.isMoveLeft(board) == false) {
             for (Button[] btns : board) {
@@ -131,7 +143,7 @@ public class MinMaxController   implements Initializable {
             textLabel.setText("Draw");
             waitAndPrint();
             Next_Round.setDisable(false);
-
+            GlobalOperation.changeSceneWithoutEvent(root,"draw");
         }
 
     }
