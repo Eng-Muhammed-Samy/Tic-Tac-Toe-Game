@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="600.0" style="-fx-background-color: rgb(151,210,215);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.controllers.GameStatusController">
+   <children>
+      <Button id="loginButton" fx:id="online" layoutX="181.0" layoutY="243.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="242.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="Online" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button id="loginButton" fx:id="offline" layoutX="180.0" layoutY="168.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="241.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="offline" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

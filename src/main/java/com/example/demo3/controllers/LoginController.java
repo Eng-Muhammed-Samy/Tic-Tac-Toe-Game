@@ -4,17 +4,24 @@ import com.example.demo3.controllers.GlobalOperation;
 import com.example.demo3.database.models.UserFunctionality;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.fxml.Initializable;
+import javafx.scene.control.*;
+import org.w3c.dom.events.MouseEvent;
 
-public class LoginController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class LoginController implements Initializable {
     @FXML
     private TextField username;
     @FXML
     private PasswordField pass;
 
+    @FXML
+    private Hyperlink signUpLink;
+
     public static String loginName;
+
 
     @FXML
     protected void loginfun(ActionEvent event) {
@@ -42,4 +49,11 @@ public class LoginController {
         e.printStackTrace();
     }
 }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        signUpLink.setOnAction((e)->{
+            GlobalOperation.changeScene(e,"sign_up");
+        });
+    }
 }
