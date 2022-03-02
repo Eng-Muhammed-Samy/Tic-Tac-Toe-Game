@@ -6,7 +6,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
 public class GlobalOperation {
@@ -15,7 +14,7 @@ public class GlobalOperation {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(fxml+".fxml"));
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         try {
-            scene = new Scene(fxmlLoader.load(),  573, 500);
+            scene = new Scene(fxmlLoader.load());
         } catch (IOException e) {
             e.printStackTrace();
         }

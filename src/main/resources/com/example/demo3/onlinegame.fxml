@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="470.0" prefWidth="600.0" style="-fx-background-color: rgb(151,210,215);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.controllers.OnlineGame">
+<AnchorPane style="-fx-background-color: rgb(151,210,215);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.controllers.OnlineGame">
    <children>
       <Line endX="121.60006713867188" endY="29.399993896484375" layoutX="92.0" layoutY="103.0" startX="121.60006713867188" startY="223.99996948242188" stroke="WHITE" strokeLineJoin="ROUND" strokeWidth="4.0">
          <effect>
@@ -46,46 +46,46 @@
             <Font name="Berlin Sans FB Demi Bold" size="37.0" />
          </font>
       </Label>
-      <Button fx:id="button0" onAction="#print" layoutX="128.0" layoutY="115.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="76.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
+      <Button fx:id="button0" layoutX="128.0" layoutY="115.0" mnemonicParsing="false" onAction="#print" prefHeight="64.0" prefWidth="76.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
          <font>
             <Font name="Calisto MT Italic" size="38.0" />
          </font>
       </Button>
-      <Button fx:id="button1"  onAction="#print1" layoutX="233.0" layoutY="109.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="86.0" style="-fx-background-color: #97d2d7;">
+      <Button fx:id="button1" layoutX="233.0" layoutY="109.0" mnemonicParsing="false" onAction="#print1" prefHeight="58.0" prefWidth="86.0" style="-fx-background-color: #97d2d7;">
          <font>
             <Font name="Brush Script MT Italic" size="35.0" />
          </font></Button>
-      <Button fx:id="button2"  onAction="#print2" layoutX="347.0" layoutY="116.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="86.0" style="-fx-background-color: #97d2d7;">
+      <Button fx:id="button2" layoutX="347.0" layoutY="116.0" mnemonicParsing="false" onAction="#print2" prefHeight="64.0" prefWidth="86.0" style="-fx-background-color: #97d2d7;">
          <font>
             <Font name="Brush Script MT Italic" size="35.0" />
          </font>
       </Button>
-      <Button fx:id="button3"  onAction="#print3" layoutX="108.0" layoutY="198.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="98.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
+      <Button fx:id="button3" layoutX="108.0" layoutY="198.0" mnemonicParsing="false" onAction="#print3" prefHeight="72.0" prefWidth="98.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
          <font>
             <Font name="Calisto MT Italic" size="38.0" />
          </font>
       </Button>
-      <Button fx:id="button4"  onAction="#print4" layoutX="229.0" layoutY="198.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="98.0" style="-fx-background-color: #97d2d7;">
+      <Button fx:id="button4" layoutX="229.0" layoutY="198.0" mnemonicParsing="false" onAction="#print4" prefHeight="54.0" prefWidth="98.0" style="-fx-background-color: #97d2d7;">
          <font>
             <Font name="Brush Script MT Italic" size="35.0" />
          </font>
       </Button>
-      <Button fx:id="button5"  onAction="#print5" layoutX="347.0" layoutY="198.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="86.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
+      <Button fx:id="button5" layoutX="347.0" layoutY="198.0" mnemonicParsing="false" onAction="#print5" prefHeight="58.0" prefWidth="86.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
          <font>
             <Font name="Calisto MT Italic" size="38.0" />
          </font>
       </Button>
-      <Button fx:id="button6"  onAction="#print6" layoutX="132.0" layoutY="278.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="76.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
+      <Button fx:id="button6" layoutX="132.0" layoutY="278.0" mnemonicParsing="false" onAction="#print6" prefHeight="64.0" prefWidth="76.0" style="-fx-background-color: #97d2d7;" textFill="#fe9696">
          <font>
             <Font name="Calisto MT Italic" size="38.0" />
          </font>
       </Button>
-      <Button fx:id="button7"  onAction="#print7" layoutX="231.0" layoutY="278.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="86.0" style="-fx-background-color: #97d2d7;">
+      <Button fx:id="button7" layoutX="231.0" layoutY="278.0" mnemonicParsing="false" onAction="#print7" prefHeight="58.0" prefWidth="86.0" style="-fx-background-color: #97d2d7;">
          <font>
             <Font name="Brush Script MT Italic" size="35.0" />
          </font>
       </Button>
-      <Button fx:id="button8"  onAction="#print8" layoutX="345.0" layoutY="277.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="86.0" style="-fx-background-color: #97d2d7;">
+      <Button fx:id="button8" layoutX="345.0" layoutY="277.0" mnemonicParsing="false" onAction="#print8" prefHeight="54.0" prefWidth="86.0" style="-fx-background-color: #97d2d7;">
          <font>
             <Font name="Brush Script MT Italic" size="35.0" />
          </font>
@@ -95,12 +95,12 @@
             <Font name="Berlin Sans FB Demi Bold" size="17.0" />
          </font>
       </Button>
-      <Button id="gameButtons" onAction="#sendInvitation" layoutX="10.0" layoutY="15.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="PAUSE" textFill="WHITE">
+      <Button id="gameButtons" layoutX="10.0" layoutY="15.0" mnemonicParsing="false" onAction="#sendInvitation" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="PAUSE" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="17.0" />
          </font>
       </Button>
-      <Button id="gameButtons" onAction="#play" layoutX="162.0" layoutY="15.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="PLAY" textFill="WHITE">
+      <Button id="gameButtons" layoutX="162.0" layoutY="15.0" mnemonicParsing="false" onAction="#play" prefHeight="26.0" prefWidth="123.0" styleClass="buttons" stylesheets="@../../../css/styles.css" text="PLAY" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="17.0" />
          </font>
@@ -110,7 +110,7 @@
 <!--            <Font name="Berlin Sans FB Demi Bold" size="17.0" />-->
 <!--         </font>-->
 <!--      </Button>-->
-      <TextField layoutX="118.0" layoutY="440.0" prefHeight="20.0" prefWidth="292.0" promptText="type a message" style="-fx-background-color: rgb(255,255,255);" />
+      <TextField layoutX="118.0" layoutY="440.0" prefHeight="20.0" prefWidth="292.0" promptText="type a message" style="-fx-background-color: rgb(255,255,255); -fx-margin-bottom: 20;" />
       <ScrollPane layoutX="45.0" layoutY="350.0" prefHeight="84.0" prefWidth="510.0" style="-fx-background-color: rgb(255,255,255);">
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="82.0" prefWidth="510.0" style="-fx-background-color: rgb(255,255,255);">

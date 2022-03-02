@@ -1,5 +1,7 @@
 package com.example.demo3.server;
 
+import com.example.demo3.User;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -11,7 +13,7 @@ public class HandleSocket{
      DataOutputStream toClient;
     static int i = 0;
     public static Vector<HandleSocket> clients = new Vector<>();
-//    public static Map<String, BlurPrintClient> clientsMap = new HashMap<String, BlurPrintClient>();
+//    public static Vector<User>users = new Vector<>();
     public HandleSocket(Socket socket){
 
         try {

@@ -36,7 +36,7 @@ public class LoginController {
                     alert.setContentText("User not Found | username or password not correct");
                     alert.show();
                     return;
-                }
+            }
         }
     }catch (Exception e) {
         e.printStackTrace();
