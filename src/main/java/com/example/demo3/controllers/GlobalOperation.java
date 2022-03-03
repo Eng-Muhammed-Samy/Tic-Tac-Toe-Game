@@ -17,7 +17,7 @@ public class GlobalOperation {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(fxml+".fxml"));
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         try {
-            scene = new Scene(fxmlLoader.load(),  573, 400);
+            scene = new Scene(fxmlLoader.load());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -28,7 +28,7 @@ public class GlobalOperation {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(fxml+".fxml"));
         Stage stage = (Stage) root.getScene().getWindow();
         try {
-            Scene scene = new Scene(fxmlLoader.load(), 573, 400);
+            Scene scene = new Scene(fxmlLoader.load());
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {

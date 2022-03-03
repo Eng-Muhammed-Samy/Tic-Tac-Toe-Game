@@ -4,10 +4,6 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author Azab
- */
 class Room {
 
     HandleSocket player1;

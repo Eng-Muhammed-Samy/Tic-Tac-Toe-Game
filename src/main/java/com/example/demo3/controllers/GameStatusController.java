@@ -19,7 +19,7 @@ public class GameStatusController implements Initializable {
          GlobalOperation.changeScene(e,"offlinegame");
             });
         online.setOnAction((e)->{
-            GlobalOperation.changeScene(e,"player_status_multuPlayer");
+            GlobalOperation.changeScene(e,"onlinegame");
         });
 
     }
