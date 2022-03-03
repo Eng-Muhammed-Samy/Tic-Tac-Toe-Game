@@ -18,6 +18,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -70,7 +71,7 @@ public class MinMaxController   implements Initializable {
     private int xWins=0;
     private int oWins=0;
     private String score;
-
+    String lvl = "Medium";
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -173,11 +174,16 @@ public class MinMaxController   implements Initializable {
         flag = num;
     }
 
+    @FXML
+    protected void level(ActionEvent event){
+        lvl = ((MenuItem)event.getSource()).getText();
+    }
+
     private void setActionOnBtn(Button[][] board) {
 
         for (Button[] btns : board) {
             for (Button btn : btns) {
-                switch ("Hard") {
+                switch (lvl) {
 
                     case "Hard":
                         btn.addEventHandler(ActionEvent.ACTION, (ActionEvent event) -> {

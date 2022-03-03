@@ -38,7 +38,7 @@ public class LoginController implements Initializable {
             boolean isUserExist = us.ifUserFound(username.getText());
                 if (isUserExist && password.equals(pass.getText())) {
                     this.loginName = username.getText();
-                    GlobalOperation.changeScene(event, "onlinegame");
+                    GlobalOperation.changeScene(event, "main_menu");
                 } else {
                     alert.setContentText("User not Found | username or password not correct");
                     alert.show();

@@ -18,10 +18,12 @@ public class HandleSocket{
             fromClient = new DataInputStream(socket.getInputStream());
             toClient = new DataOutputStream(socket.getOutputStream());
             clients.add(this);
+
             if(clients.size()%2 == 0 && clients.size() > 0){
                 new Room(clients.get(i), clients.get(++i));
                 i++;
             }
+
         } catch (IOException e) {
             e.printStackTrace();
         }
