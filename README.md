@@ -31,21 +31,21 @@ the next time both players are online as the game will prompt you to decide if y
 4. in multiplayer mode you will play with your friend
 ## SnapShots
 <div style="display:flex;align-items: center;">
-    <img src="../Tic-Tac-Toe-Game/src/main/resources/images/readmeImg/login.png" style="width: 30%;margin-left:2%; " alt="loginPage" title="loginPage">
-    <img src="../Tic-Tac-Toe-Game/src/main/resources/images/readmeImg/signUp.png" style="width: 30%;margin-left:2%; " alt="playerList" title="playerList">
-    <img src="../Tic-Tac-Toe-Game/src/main/resources/images/readmeImg/Main%20menu.png" style="width: 30%;margin-left:2%; " alt="server" title="server">
+    <img src="src/main/resources/images/readmeImg/login.png" style="width: 30%;margin-left:2%; ">
+    <img src="src/main/resources/images/readmeImg/signUp.png" style="width: 30%;margin-left:2%; ">
+    <img src="src/main/resources/images/readmeImg/Main%20menu.png" style="width: 30%;margin-left:2%; ">
 </div>
 <br>
 <div style="display:flex;align-items: center;">
-    <img src="../Tic-Tac-Toe-Game/src/main/resources/images/readmeImg/selectMode.png" style="width: 30%;margin-left:2%;" alt="offlineGame" title="offlineGame"> 
-    <img src="../Tic-Tac-Toe-Game/src/main/resources/images/readmeImg/min%20max.png"  style="width: 30%;margin-left:2%;" alt="onlineGame" title="onlineGame">
-<img src="../Tic-Tac-Toe-Game/src/main/resources/images/readmeImg/win.png" style="width: 30%;margin-left:2%; " alt="loserOffline" title="loserOffline">
+    <img src="src/main/resources/images/readmeImg/selectMode.png" style="width: 30%;margin-left:2%;" > 
+    <img src="src/main/resources/images/readmeImg/min%20max.png"  style="width: 30%;margin-left:2%;" >
+<img src="src/main/resources/images/readmeImg/win.png" style="width: 30%;margin-left:2%; ">
 </div>
 <br>
 <div style="display:flex;align-items: center;">
- <img src="../Tic-Tac-Toe-Game/src/main/resources/images/readmeImg/Multi%20player%20mode.png"  style="width: 30%;margin-left:2%;" alt="connection" title="connection">
-    <img src="../Tic-Tac-Toe-Game/src/main/resources/images/readmeImg/online.png" style="width: 30%;margin-left:2%; " alt="winnerOffline" title="winnerOffline"> 
-    <img src="../Tic-Tac-Toe-Game/src/main/resources/images/readmeImg/onlinewinlose.png" style="width: 30%;margin-left:2%; " alt="Tie" title="Tie">
+ <img src="src/main/resources/images/readmeImg/Multi%20player%20mode.png"  style="width: 30%;margin-left:2%;">
+    <img src="src/main/resources/images/readmeImg/online.png" style="width: 30%;margin-left:2%; " > 
+    <img src="src/main/resources/images/readmeImg/onlinewinlose.png" style="width: 30%;margin-left:2%;">
 </div>
 <br>
 
