@@ -6,7 +6,9 @@ import com.example.demo3.database.models.UserFunctionality;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.sql.SQLException;
@@ -33,6 +35,8 @@ public class SignupController implements Initializable {
 
 
     public void registerUser(ActionEvent event){
+        Stage stage= (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Login");
         String usrName = usrNameField.getText();
         String password = String.valueOf(passwordField.getText());
         String confirmPassword = String.valueOf(confirmPasswordField.getText());

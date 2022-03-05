@@ -1,6 +1,6 @@
 #parent
 {
--fx-background-color: rgb(171,210,215);
+ -fx-background-color: rgb(171,210,215);
 }
 .buttons{
 
@@ -18,8 +18,6 @@
 #textLabel
 {
    -fx-fill: red;
-   -fx-stroke: firebrick;
-   -fx-stroke-width: 2px;
 
 }
 #player2

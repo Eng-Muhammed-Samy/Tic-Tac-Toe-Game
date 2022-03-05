@@ -41,7 +41,7 @@
                 <Font name="Berlin Sans FB Demi Bold" size="50.0" />
             </font>
         </Label>
-        <Label fx:id="textLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="165.0" layoutY="55.0" prefHeight="54.0" prefWidth="263.0" stylesheets="@../../../css/styles.css" text="rehab vs sondos" textFill="#fff47b">
+        <Label fx:id="textLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="165.0" layoutY="55.0" prefHeight="54.0" prefWidth="263.0" stylesheets="@../../../css/styles.css" text="Me VS AI" textFill="#fff47b">
             <font>
                 <Font name="Berlin Sans FB Demi Bold" size="37.0" />
             </font>

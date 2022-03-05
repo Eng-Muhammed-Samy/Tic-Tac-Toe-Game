@@ -7,6 +7,7 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -42,6 +43,8 @@ public class OnlineGame {
     @FXML
     private Button button8;
 
+    @FXML
+    private AnchorPane root;
     boolean isX = true;
     boolean isO = false;
     DataOutputStream ps;
@@ -280,7 +283,7 @@ public class OnlineGame {
                                 Platform.runLater(new Runnable() {
                                     @Override
                                     public void run() {
-                                     GlobalOperation.changeScene(event, "win");
+                                     GlobalOperation.changeSceneWithoutEvent(root, "win");
                                     }});
                                 BoardFunctionality bo = new BoardFunctionality();
                                 bo.insertIntoBoard(db, new LoginController().loginName);
@@ -290,15 +293,13 @@ public class OnlineGame {
                                 Platform.runLater(new Runnable() {
                                     @Override
                                     public void run() {
-                                GlobalOperation.changeScene(event, "lose");
+                                GlobalOperation.changeSceneWithoutEvent(root, "lose");
                                     }
                                 });
                                 BoardFunctionality bo2 = new BoardFunctionality();
                                 bo2.insertIntoBoard(db, new LoginController().loginName);
                                 break;
-//                            case "inv":
-//                                    GlobalOperation.changeScene(event, "invitation");
-//                                    break;
+
                             default:
                                 break;
                         }

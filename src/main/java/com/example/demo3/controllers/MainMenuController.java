@@ -4,6 +4,7 @@ package com.example.demo3.controllers;
 import com.example.demo3.UserModel;
 import com.example.demo3.database.models.ScoreFunctionality;
 import com.example.demo3.database.models.UserFunctionality;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -55,5 +56,9 @@ public class MainMenuController implements Initializable {
             table.setItems(users);
         newGame.setOnAction((e)-> GlobalOperation.changeScene(e,"modes"));
 
+    }
+    @FXML
+    protected void quite(){
+        Platform.exit();
     }
 }
