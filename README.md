@@ -53,7 +53,7 @@ the next time both players are online as the game will prompt you to decide if y
 ## Credits
 - Mohamed Samy
 - Mohamed Mohab
-- Yasmin Kamal
+- Yasmine Kamal
 - Rehab Naguib
 - Sondos Tarek
 - Alaa Gamal
