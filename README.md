@@ -14,8 +14,8 @@ the next time both players are online as the game will prompt you to decide if y
 1. install postgresql server on your pc from [here](https://www.postgresql.org/download/)
 2. make a clone from the project on your pc
 3. add tictactoe database
-4. run tableCreated class
-5. install and run intellij IDE to start using the game
+4. install and run intellij IDE to start using the game
+5. run tableCreated class
 6. the game includes 2 projects one for the client and the other for the server
 7. add postgres jar file
     - open project structure from file tab in toolbar or press `ctrl+Alt+shift+s` (intellij)
