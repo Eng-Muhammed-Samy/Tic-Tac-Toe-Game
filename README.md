@@ -1,4 +1,5 @@
-![Image](src/main/resources/images/img.png)
+
+![Image](src/main/resources/images/img.jpg)
 # Tic-Tac-Toe
 This project is a Tic_Tac_Toe game with a client-server concept. The game has many features including playing with an
 AI with 2 different levels of difficulty and playing in multiplayer mode with online available players. the game also has a chatting feature that
