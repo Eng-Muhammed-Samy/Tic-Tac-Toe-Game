@@ -9,7 +9,7 @@ the next time both players are online as the game will prompt you to decide if y
         <img src="Readme_Files/images/Demo.gif" style="margin-left:2%; " alt="Demo Gif" title="Demo Gif">
 </center>
 
-- You can watch Demo video from [Demo](https://drive.google.com/drive/folders/1d825xHb36J1yfe009oG9G1QIfDqnW3iv)
+- You can watch Demo video from [Demo](https://youtu.be/Sp_U9unA3so)
 ## Installation
 1. install postgresql server on your pc from [here](https://www.postgresql.org/download/)
 2. make a clone from the project on your pc
