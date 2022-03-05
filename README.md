@@ -32,21 +32,21 @@ the next time both players are online as the game will prompt you to decide if y
 4. in multiplayer mode you will play with your friend
 ## SnapShots
 <div style="display:flex;align-items: center;">
-    <img src="src/main/resources/images/readmeImg/login.png" style="width: 30%;height:250px; margin-left:2%; ">
-    <img src="src/main/resources/images/readmeImg/signUp.png" style="width: 30%;margin-left:2%; ">
-    <img src="src/main/resources/images/readmeImg/Main%20menu.png" style="width: 30%;margin-left:2%; ">
+    <img src="src/main/resources/images/readmeImg/login.png" style="width: 30%;height:230px; margin-left:2%; ">
+    <img src="src/main/resources/images/readmeImg/signUp.png" style="width: 30%;height:230px;margin-left:2%; ">
+    <img src="src/main/resources/images/readmeImg/Main%20menu.png" style="width: 30%;height:230px;margin-left:2%; ">
 </div>
 <br>
 <div style="display:flex;align-items: center;">
-    <img src="src/main/resources/images/readmeImg/selectMode.png" style="width: 30%;margin-left:2%;" > 
-    <img src="src/main/resources/images/readmeImg/min%20max.png"  style="width: 30%;margin-left:2%;" >
-<img src="src/main/resources/images/readmeImg/win.png" style="width: 30%;margin-left:2%; ">
+    <img src="src/main/resources/images/readmeImg/selectMode.png" style="width: 30%;height:230px;margin-left:2%;" > 
+    <img src="src/main/resources/images/readmeImg/min%20max.png"  style="width: 30%;height:230px;margin-left:2%;" >
+<img src="src/main/resources/images/readmeImg/win.png" style="width: 30%;height:230px;margin-left:2%; ">
 </div>
 <br>
 <div style="display:flex;align-items: center;">
- <img src="src/main/resources/images/readmeImg/Multi%20player%20mode.png"  style="width: 30%;margin-left:2%;">
-    <img src="src/main/resources/images/readmeImg/online.png" style="width: 30%;margin-left:2%; " > 
-    <img src="src/main/resources/images/readmeImg/onlinewinlose.png" style="width: 30%;margin-left:2%;">
+ <img src="src/main/resources/images/readmeImg/Multi%20player%20mode.png"  style="width: 30%;height:230px;margin-left:2%;">
+    <img src="src/main/resources/images/readmeImg/online.png" style="width: 30%;height:230px;margin-left:2%; " > 
+    <img src="src/main/resources/images/readmeImg/onlinewinlose.png" style="width: 30%;height:230px;margin-left:2%;">
 </div>
 <br>
 
