@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="470.0" prefWidth="600.0" style="-fx-background-color: rgb(151,210,215);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.controllers.OnlineGame">
+<AnchorPane fx:id="root" prefHeight="470.0" prefWidth="600.0" style="-fx-background-color: rgb(151,210,215);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.controllers.OnlineGame">
    <children>
       <Line endX="121.60006713867188" endY="29.399993896484375" layoutX="92.0" layoutY="103.0" startX="121.60006713867188" startY="223.99996948242188" stroke="WHITE" strokeLineJoin="ROUND" strokeWidth="4.0">
          <effect>
@@ -41,7 +41,7 @@
             <Font name="Berlin Sans FB Demi Bold" size="50.0" />
          </font>
       </Label>
-      <Label fx:id="textLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="58.0" prefHeight="54.0" prefWidth="263.0" stylesheets="@../../../css/styles.css" text="rehab vs sondos" textFill="#fff47b">
+      <Label fx:id="textLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="58.0" prefHeight="54.0" prefWidth="263.0" stylesheets="@../../../css/styles.css" text="" textFill="#fff47b">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="37.0" />
          </font>

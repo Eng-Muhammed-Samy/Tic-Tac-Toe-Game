@@ -5,7 +5,9 @@ import com.example.demo3.database.models.UserFunctionality;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
 import org.w3c.dom.events.MouseEvent;
 
 import java.net.URL;
@@ -25,6 +27,8 @@ public class LoginController implements Initializable {
 
     @FXML
     protected void loginfun(ActionEvent event) {
+        Stage stage= (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Login");
     Alert alert = new Alert(Alert.AlertType.ERROR);
     alert.setTitle("Database error");
     alert.setHeaderText("user error");
@@ -38,6 +42,8 @@ public class LoginController implements Initializable {
             boolean isUserExist = us.ifUserFound(username.getText());
                 if (isUserExist && password.equals(pass.getText())) {
                     this.loginName = username.getText();
+                    stage = (javafx.stage.Stage) ((Node) event.getSource()).getScene().getWindow();
+                    stage.setTitle(loginName);
                     GlobalOperation.changeScene(event, "main_menu");
                 } else {
                     alert.setContentText("User not Found | username or password not correct");

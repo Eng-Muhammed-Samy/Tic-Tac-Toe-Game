@@ -1,5 +1,7 @@
 package com.example.demo3.server;
 
+import com.example.demo3.controllers.LoginController;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -9,6 +11,7 @@ import java.util.Vector;
 public class HandleSocket{
      DataInputStream fromClient;
      DataOutputStream toClient;
+     private String name = LoginController.loginName;
     static int i = 0;
     public static Vector<HandleSocket> clients = new Vector<>();
 //    public static Map<String, BlurPrintClient> clientsMap = new HashMap<String, BlurPrintClient>();
