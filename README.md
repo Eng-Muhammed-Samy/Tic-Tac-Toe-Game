@@ -5,6 +5,9 @@ This project is a Tic_Tac_Toe game with a client-server concept. The game has ma
 AI with 2 different levels of difficulty and playing in multiplayer mode with online available players. the game also has a chatting feature that
 allows players to communicate with each other during the game. Moreover, you can save your current game before it is finished and resume playing it
 the next time both players are online as the game will prompt you to decide if you would like to continue playing or not.
+<center>
+        <img src="src/main/resources/images/game%20video.gif" style="margin-left:2%; " alt="Demo Gif" title="Demo Gif">
+</center>
 
 - You can watch Demo video from ![Demo](https://youtu.be/Sp_U9unA3so)
 ## Installation
